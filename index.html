@@ -66,7 +66,7 @@
     $.mobile.loading("show");
     $.ajax({
       type: 'GET',
-      url: "http://mitaxijj.com.ec/system/rutas.buskoo.com/assets/connect/connect.php",
+      url: "http://gdt.com.ec/rutas.buskoo.com/assets/connect/connect.php",
       contentType: "application/json",
       dataType: 'json',
       jsonp : "callback",
@@ -75,7 +75,7 @@
       }).done(function(response){
         if(response.state === 'ok'){
           $.mobile.loading("hide");
-          window.location.assign("http://mitaxijj.com.ec/system/rutas.buskoo.com/agent/");
+          window.location.assign("http://gdt.com.ec/rutas.buskoo.com/agent/");
         }else{
           $.mobile.loading("hide");
           alert('No dispone de conexion a internet o el servidor no responde, verifique su conexión y vuelva a intentarlo.');
@@ -107,6 +107,10 @@ GeoCommerce
   </div>
   <br>
   <div data-role="article">
+    <div data-role="section" align="center">
+      <div>Conductores</div>
+      <img src="logo.png" />
+    </div>
       <br><br>  
     <div data-role="section" align="center">
          <a href="#" onclick="connect('es');" id="urles"><img src="boton_entrar.png" /></a>
